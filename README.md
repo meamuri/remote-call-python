@@ -22,3 +22,9 @@ python3 -m grpc_tools.protoc -I protobuf/ --python_out=. --grpc_python_out=. pro
 python3 server.py
 python3 client.py
 ```
+
+### golang example
+
+```
+protoc -I protobuf/ --go_out=plugins=grpc:protobuf/ protobuf/primefactor.proto
+```
