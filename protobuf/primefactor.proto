@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package primefactor;
+
+service Factors {
+  rpc PrimeFactors (Request) returns (Response) {}
+}
+
+message Request {
+  int64 num = 1;
+}
+
+message Response {
+  int64 result = 1;
+}
